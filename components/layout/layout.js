@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Head from 'next/head';
-import NextLink from 'next/link';
 import {
   Toolbar,
   Typography,
@@ -11,7 +10,6 @@ import {
 } from '@material-ui/core';
 import useStyles from '../../utils/styles';
 import { createTheme } from '@material-ui/core/styles';
-import { useState } from 'react';
 import { Store } from '../../utils/Store';
 import Cookies from 'js-cookie';
 
@@ -64,7 +62,7 @@ export default function Layout({ children }) {
         <Container className={classes.container}>{children}</Container>
         <footer className={classes.footer}>
           <Typography style={{ fontSize: '12px' }}>
-            Hector Guzman | Personal Website
+            @ Buenos Aires, Argentina
           </Typography>
         </footer>
       </ThemeProvider>
